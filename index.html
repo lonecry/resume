@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "zh-CN">
+<head>
+	<meta id = "testViewport" name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name = "format-detection" content = "telephone=no"/>
+	<meta charset = "UTF-8">
+	<link rel="shortcut icon" sizes="32x32" href=" sw.jpg">
+	<title>孙文-简历</title>
+	<style>
+		*{margin: 0;padding: 0}
+		body{position: relative}
+		iframe{
+			width: 100%;
+			height: 900px;
+			overflow: visible;
+		}
+	</style>
+	<script>
+        //宽度高度控制！
+        total_height = document.documentElement.clientHeight;//设备高度
+        total_width = document.documentElement.clientWidth;//设备宽度
+        document.getElementById( "resume" ).style.height = total_height + "px";
+        document.getElementById( "resume" ).style.width = total_width + "px";
+	</script>
+<body>
+<iframe src="sw.pdf" id="resume"    ></iframe>
+</body>
+</html>
